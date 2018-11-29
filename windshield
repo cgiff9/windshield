@@ -1,10 +1,11 @@
 #!/bin/bash
-# SSH SCREEN MANAGER v0.1a
 
-############### CONFIGURATION ###############
+# SSH SCREEN MANAGER v0.1a
+### CONFIGURATION ########
+##############################################
 SCREEN_NAME="utility-0"
 COMMAND="ssh handyman@utility-0-server"
-################# CHANGEME ##################
+##############################################
 
 unused_count=0;
 first_unused() {
