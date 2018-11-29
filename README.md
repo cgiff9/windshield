@@ -3,7 +3,7 @@ Wrapper for GNU screen tool to provide better and faster operation
 version: 0.1a
 
 # Operation
-1. Change SCREEN_NAME and COMMAND VARIABLES<br>
+1. Change SCREEN_NAME and COMMAND variables<br>
    A) SCREEN_NAME: Forms the base string of name of the screens to be generated<br>
    B) COMMAND: The default command string to run upon screen generation<br>
 2. Make script executable, i.e. $chmod +x server-a; $chmod +x windshield
