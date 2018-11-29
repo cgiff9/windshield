@@ -1,5 +1,5 @@
 #!/bin/bash
-# SSH SCREEN MANAGER v1.1a
+# SSH SCREEN MANAGER v0.1a
 
 ######### CONFIGURATION #########
 SCREEN_NAME="utility-0"
