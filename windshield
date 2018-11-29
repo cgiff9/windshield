@@ -1,0 +1,25 @@
+#!/bin/bash
+# SSH SCREEN MANAGER v1.1a
+
+######### CONFIGURATION #########
+SCREEN_NAME="utility-0"
+COMMAND="ssh handyman@utility-0-server"
+########### CHANGEME ############
+
+unused_count=0;
+first_unused() {
+   echo Checking if $SCREEN_NAME-$unused_count exists...
+   if  screen -list | grep -q "$SCREEN_NAME-$unused_count"; then
+      let "unused_count++"
+      first_unused
+   fi
+}
+
+first_unused
+echo Creating screen $SCREEN_NAME-$unused_count...
+sleep 1
+if [ "$1" = "-d" ]; then
+	screen -dmS $SCREEN_NAME-$unused_count $COMMAND
+else
+	screen -S $SCREEN_NAME-$unused_count $COMMAND
+fi
