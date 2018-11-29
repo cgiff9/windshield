@@ -1,5 +1,6 @@
 # windshield
 Wrapper for GNU screen tool to provide better and faster operation
+version: 0.1a
 
 # Operation
 1. Change SCREEN_NAME and COMMAND VARIABLES<br>
@@ -15,9 +16,9 @@ Wrapper for GNU screen tool to provide better and faster operation
 3. sX:  "screen -X -S $arg"    --Kill screen named $arg
 
 # Notes
-1. Hope to expand features with...
-   A) command line args
-   B) consolidated config file or session profiles
-   C) smarter testing for existing screen polling?
-   D) local killall function: kill all screens with SCREEN_NAME $name
-   E) generate: generate $n number of screens
+1. Hope to expand features with...<br>
+   A) command line args<br>
+   B) consolidated config file or session profiles<br>
+   C) smarter testing for existing screen polling?<br>
+   D) local killall function: kill all screens with SCREEN_NAME $name<br>
+   E) generate: generate $n number of screens<br>
