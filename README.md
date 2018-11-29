@@ -10,6 +10,9 @@ version: 0.1a
 3. New screens are labeled via a number appended to "SCREEN_NAME-".
 4. (Optional) Make a copies of windshield for different configs. 
 
+# Arguments
+1. -d: Start screen detached
+
 # Shortcuts
 1. sls: "screen -ls"           --List all running screens
 2. sr:  "screen -r $arg"       --Rejoin running screen named $arg
@@ -17,7 +20,7 @@ version: 0.1a
 
 # Notes
 1. Hope to expand features with...<br>
-   A) command line args<br>
+   A) more command line args<br>
    B) consolidated config file or session profiles<br>
    C) smarter testing for existing screen polling?<br>
    D) local killall function: kill all screens with SCREEN_NAME $name<br>
