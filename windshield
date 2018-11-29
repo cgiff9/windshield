@@ -8,7 +8,7 @@ COMMAND="ssh handyman@utility-0-server"
 
 unused_count=0;
 first_unused() {
-   echo Checking if $SCREEN_NAME-$unused_count exists...
+   // echo Checking if $SCREEN_NAME-$unused_count exists...
    if  screen -list | grep -q "$SCREEN_NAME-$unused_count"; then
       let "unused_count++"
       first_unused
