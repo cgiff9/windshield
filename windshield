@@ -3,13 +3,15 @@
 # SSH SCREEN MANAGER v0.1a
 ### CONFIGURATION ########
 ##############################################
-SCREEN_NAME="utility-0"
-COMMAND="ssh handyman@utility-0-server"
+## prefix for generated screens
+SCREEN_NAME="util_0"
+## command to run upon each screen generation
+COMMAND="ssh handyman@util_0"
 ##############################################
 
 unused_count=0;
 first_unused() {
-   // echo Checking if $SCREEN_NAME-$unused_count exists...
+   # echo Checking if $SCREEN_NAME-$unused_count exists...
    if  screen -list | grep -q "$SCREEN_NAME-$unused_count"; then
       let "unused_count++"
       first_unused
