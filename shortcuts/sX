@@ -1,2 +1,4 @@
 #!/bin/bash
+# Shortcut: Quit screen session
+
 screen -X -S $1 quit

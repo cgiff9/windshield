@@ -1,0 +1,4 @@
+#!/bin/bash
+# Shortcut: Detach screen session
+
+screen -d $1

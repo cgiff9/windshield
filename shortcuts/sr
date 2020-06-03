@@ -1,2 +1,4 @@
 #!/bin/bash
+# Shortcut: Reattach to detached screen session
+
 screen -r $1

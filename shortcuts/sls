@@ -1,2 +1,4 @@
 #!/bin/bash
+# Shortcut: List screen sessions
+
 screen -ls

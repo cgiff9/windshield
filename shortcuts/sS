@@ -1,0 +1,4 @@
+#!/bin/bash
+# Shortcut: Create screen session with name "$"
+
+screen -S $1
